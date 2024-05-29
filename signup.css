@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.form.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #f90;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #f90;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:last-child {
+    margin-bottom: 0;
+}
+
+.form button:hover {
+    background-color: #e6801b;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+.message a {
+    color: #f90;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.back-btn img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.back-btn img:hover {
+    transform: scale(1.1);
+}
